@@ -1,1 +1,1 @@
-web: gunicorn app-folder:main
+web: gunicorn app-folder.main:app
