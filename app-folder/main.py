@@ -17,7 +17,7 @@ def index():
             return render_template('home.html', billionaire=billionaire, quote=quote)
 
     # Upon opening webpage for the first time
-    df = pd.read_csv('assets/billionaire-quotes.csv', header=None)
+    df = pd.read_csv('https://raw.githubusercontent.com/dankositzke/billionaire-quotes/main/app-folder/assets/billionaire-quotes.csv', header=None)
     row = df.sample()
 
     billionaire = row.iat[0,0]
