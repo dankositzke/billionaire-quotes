@@ -8,7 +8,7 @@ def index():
     if request.method == 'POST':
         if request.form.get('new-quote') == 'Quote':
 
-            df = pd.read_csv('assets/billionaire-quotes.csv', header=None)
+            df = pd.read_csv('app-folder/assets/billionaire-quotes.csv', header=None)
             row = df.sample()
 
             billionaire = row.iat[0,0]
